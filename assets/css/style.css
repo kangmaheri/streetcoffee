@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,400;1,500;1,600;1,700;1,800&display=swap');
+:root {
+  --primary: #FF902B;
+  --accents: #F9D9AA;
+  --glass: #FFFFFF;
+  --light: #7E7D7A;
+}
+html, body {
+  font-family: 'Poppins', sans-serif;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  caret-color: var(--primary);
+}
+.navbar {
+  display: flex;
+}
+.logo {
+  width: 150px;
+  height: 30px;
+}
+.menu_ li:hover {
+  color: var(--primary);
+}
+.__primary {
+  color: var(--primary);
+}
+.__accents {
+  color: var(--accents);
+}
+
+span.foryou:after,  span.now:after, span.__services:after{
+  content: attr(data-title);
+  width: max-content;
+  color: transparent;
+  height: 5px;
+  background: var(--primary);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+}
+.indicator-btn.active {
+  background-color: var(--primary);
+}
+.testimonial__slider__container img::after {
+  content: attr(data-user-text);
+  width: 300px;
+  height: 200px;
+  background: var(--primary);
+  z-index: 999;
+}
+.testimonial__slider {
+  transition: 1s;
+}
+
+@media (min-width: 2000px) {
+  body {
+    margin: 0 auto;
+  }
+}
+
+
+
+

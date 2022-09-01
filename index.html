@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="./assets/images/favicon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Coffee Street</title>
+
+</head>
+<body class="max-w-[2000px]">
+<!-- todo:hero -->
+<section class="hero  block relative" style="background: #F6EBDA;">
+  <!-- ?navbar -->
+  <div class="navbar flex justify-around pt-6 relative z-10">
+
+    <img 
+      src="./assets/images/logo_coffe.png" 
+      alt="logo Coffee" 
+      class="logo"
+    >
+
+    <ul class="hidden lg:flex gap-10 text-lg font-normal menu_">
+
+      <li><a href="#aboutus">About us</a></li>
+      <li><a href="#ourproduct">Our Product</a></li>
+      <li><a href="#delivery">Delivery</a></li>
+
+    </ul>
+
+    <div class="hidden rt_nav lg:flex gap-5">
+
+      <div class="search-input flex px-3 rounded-l-full bg-white rounded-r-full">
+        <img 
+          src="./assets/images/akar-icons_search.svg"
+          alt="search"
+          width="13"
+          height="12"
+          class="bg-cover"
+        >
+        <input 
+          type="search" 
+          placeholder="Cappucino"
+          class="outline-none px-4 py-2 text-sm"
+        />
+      </div>
+
+      <img 
+        src="./assets/images/icons_cart.png" 
+        alt="cart" 
+      />
+
+    </div>
+
+  </div>
+  <!-- ?end navbar -->
+  <div class="hero__content__wrapp relative z-10 flex flex-col lg:flex-row gap-20 justify-around items-center mt-24 ml-3 lg:ml-10">
+    <div class="content-hero">
+
+      <h1 class="font-semibold lg:text-5xl text-2xl">
+        Enjoy your <span class="__primary">coffee</span>
+        <br />
+        before your activity
+      </h1>
+
+      <p class="mt-10 text-sm lg:text-base">
+        Boost your productivity and build your
+        <br />
+        mood with a glass of coffee in the morning 
+      </p>
+      <div class="btn__wrapper flex items-center mt-4">
+
+        <button 
+          class="lg:w-44 w-30 p-1 lg:p-0 lg:h-11 rounded-3xl text-white text-sm flex justify-center items-center gap-2 mr-5"
+          style="background: #2F2105; 
+          box-shadow: 0px 4px 32px rgba(223, 195, 124, 0.25);"
+        >
+
+          <span>
+            Order Now
+          </span> 
+          <img src="./assets/images/hero/button-icon.png" alt="btn icon">
+
+        </button>
+
+        <button class="__primary">More menu</button>
+
+      </div>
+      
+    </div>
+
+    <div class="img-hero">
+
+      <img 
+        src="./assets/images/hero/img-hero.png"
+          alt="img hero" 
+      />
+
+    </div>
+
+  </div>
+
+  <div class="bg-image overflow-hidden">
+
+    <div class="rectangle9"></div>
+    <img 
+      src="./assets/images/hero/bg_img_hero2.png"
+      alt="coffee bean" 
+      class="hidden lg:inline-block lg:absolute lg:top-0 lg:right-0 lg:z-0"
+    />
+    
+    <img 
+      src="./assets/images/hero/bg_img_hero1.png"
+      alt="coffee beans" 
+      class=""
+    />
+
+  </div>
+
+</section>
+<!-- todo:end hero -->
+
+<!-- *popular product -->
+<div 
+  class="_popular hidden xl:relative lg:-mt-[20%] px-4 py-2 w-[90%]  mx-auto 
+  xl:flex justify-center items-center  lg:h-[500px]"
+>
+
+  <div class="__popular_head text-2xl sm:text-4xl font-semibold ml-10 absolute z-10 top-0 left-0">
+
+    <h1 class="inline-block relative">
+      Popular 
+      <span class="now" data-title="Now">Now</span>
+    </h1>
+
+  </div>
+
+  <div class="popular__coffee mt-10  flex flex-wrap justify-center items-center lg:absolute z-10 gap-10 h-full">
+
+    <!-- ?Coffee Card -->
+    <div 
+    class="coffee__card max-w-sm bg-white rounded-lg border border-gray-200 
+    shadow-md dark:bg-gray-800 dark:border-gray-700"
+    >
+
+      <img 
+        class="rounded-t-lg mx-auto" 
+        src="./assets/images/popular/vanilalatte.png" 
+        alt="vanilalatte" 
+      />
+
+      <div class="p-5">
+
+        <div class="flex justify-between">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Vanilla Latte</h5>
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">21 K</h5>
+        </div>
+
+        <div class="flex justify-between items-center">
+
+          <div class="coffee__choice">
+
+            <a 
+              href="#" 
+              class="inline-flex items-center py-1 px-3 text-sm font-medium text-center
+              text-orange-500 border-2 border-orange-500 rounded-lg 
+              hover:border-orange-600 focus:ring-4 focus:outline-none focus:ring-orange-300"
+            >
+                Hot
+            </a>
+
+            <a 
+              href="#" 
+              class="inline-flex items-center py-1 px-3 text-sm font-medium text-center
+              text-orange-500 border-2 border-orange-500 rounded-lg 
+              hover:border-orange-600 focus:ring-4 focus:outline-none focus:ring-orange-300"
+            >
+                Cold
+            </a>
+
+          </div>
+
+          <a href="#" class="w-12 h-12 rounded-full border-2 bg-orange-500 flex justify-center items-center">
+            <img src="./assets/images/coffee-cart.svg" alt="coffee cart">
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- ?end Coffee Card -->
+
+    <!-- ?Coffee Card -->
+    <div 
+    class="coffee__card max-w-sm bg-white rounded-lg border border-gray-200 
+    shadow-md dark:bg-gray-800 dark:border-gray-700"
+    >
+
+      <img 
+        class="rounded-t-lg mx-auto" 
+        src="./assets/images/popular/espresso.png" 
+        alt="espresso" 
+      />
+
+      <div class="p-5">
+
+        <div class="flex justify-between">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Espresso</h5>
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">12 K</h5>
+        </div>
+
+        <div class="flex justify-between items-center">
+
+          <div class="coffee__choice">
+
+            <a 
+              href="#" 
+              class="inline-flex items-center py-1 px-3 text-sm font-medium text-center
+              text-orange-500 border-2 border-orange-500 rounded-lg 
+              hover:border-orange-600 focus:ring-4 focus:outline-none focus:ring-orange-300"
+            >
+                Hot
+            </a>
+
+            <a 
+              href="#" 
+              class="inline-flex items-center py-1 px-3 text-sm font-medium text-center
+              text-orange-500 border-2 border-orange-500 rounded-lg 
+              hover:border-orange-600 focus:ring-4 focus:outline-none focus:ring-orange-300"
+            >
+                Cold
+            </a>
+
+          </div>
+
+          <a href="#" class="w-12 h-12 rounded-full border-2 bg-orange-500 flex justify-center items-center">
+            <img src="./assets/images/coffee-cart.svg" alt="coffee cart">
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- ?end Coffee Card -->
+
+    <!-- ?Coffee Card -->
+    <div 
+    class="coffee__card max-w-sm bg-white rounded-lg border border-gray-200 
+    shadow-md dark:bg-gray-800 dark:border-gray-700"
+    >
+
+      <img 
+        class="rounded-t-lg mx-auto" 
+        src="./assets/images/popular/hazelnutlatte.png" 
+        alt="vanilalatte" 
+      />
+
+      <div class="p-5">
+
+        <div class="flex justify-between">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Hazelnut Latte</h5>
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">23 K</h5>
+        </div>
+
+        <div class="flex justify-between items-center">
+
+          <div class="coffee__choice">
+
+            <a 
+              href="#" 
+              class="inline-flex items-center py-1 px-3 text-sm font-medium text-center
+              text-orange-500 border-2 border-orange-500 rounded-lg 
+              hover:border-orange-600 focus:ring-4 focus:outline-none focus:ring-orange-300"
+            >
+                Hot
+            </a>
+
+            <a 
+              href="#" 
+              class="inline-flex items-center py-1 px-3 text-sm font-medium text-center
+              text-orange-500 border-2 border-orange-500 rounded-lg 
+              hover:border-orange-600 focus:ring-4 focus:outline-none focus:ring-orange-300"
+            >
+                Cold
+            </a>
+
+          </div>
+
+          <a href="#" class="w-12 h-12 rounded-full border-2 bg-orange-500 flex justify-center items-center">
+            <img src="./assets/images/coffee-cart.svg" alt="coffee cart">
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- ?end Coffee Card -->
+    
+  </div>
+
+  <div 
+    class="coffee__bg lg:absolute lg:bottom-0 lg:left-0 w-full h-[70%] rounded-[30px]"
+    style="background: var(--accents);"
+  >
+  </div>
+
+</div>
+<!-- *end popular product -->
+
+<!-- todo: How to -->
+<div class="w-[80%] mx-auto flex flex-col gap-2 mt-10" id="delivery">
+
+  <h1 class="item font-bold text-base md:text-lg lg:text-3xl">
+    <span class="relative">
+      How to use Delivery 
+      <span class="__services" data-title="Services">
+        Services
+      </span>
+    </span>
+  </h1>
+
+  <div class="item w-full flex justify-around items-center flex-wrap gap-1">
+    
+    <div class="steps">
+      <img src="./assets/images/howto/coffee-cup1.png" alt="Step1">
+      <h1 class="text-2xl font-semibold">choose your coffee</h1>
+      <p>there are 20+ coffee for you</p>
+    </div>
+
+    <div class="steps">
+      <img src="./assets/images/howto/food-truck1.png" alt="Step1">
+      <h1 class="text-2xl font-semibold">we delivery it to you</h1>
+      <p>Choose delivery service</p>
+    </div>
+    
+    <div class="steps">
+      <img src="./assets/images/howto/coffee-cup2.png" alt="Step1">
+      <h1 class="text-2xl font-semibold">Enjoy your coffee</h1>
+      <p>Choose delivery service</p>
+    </div>
+    
+  </div>
+
+</div>
+<!-- todo: end How to -->
+
+<!-- *About -->
+<div 
+  id="aboutus"
+  class="flex flex-col md:flex-row max-w-[100vw] mt-80" 
+  style="background-image: url(./assets/images/about/bg-image.png);"
+>
+
+  <div class="item flex-1 flex justify-center -mt-24 ">
+
+    <img src="./assets/images/about/about1.png" alt="about coffee">
+
+  </div>
+
+  <div class="item flex-1 flex flex-col justify-center gap-10 items-center md:items-start">
+
+    <h1 class="font-semibold text-[32px]">About us</h1>
+    <h2 class="font-semibold text-2xl">We provide quality coffee,<br> and ready to deliver.</h2>
+    <p class="font-normal text-lg">
+      We are a company that makes and distributes <br> delicious drinks. 
+      our main product is made with a <br> secret recipe and available in stores worldwide.
+    </p>
+    <button 
+      class="font-bold text-xs w-28 h-10 rounded-full text-[#F4AE26] bg-[#2F2105]"
+    >
+      Get your coffee
+    </button>
+
+  </div>
+
+</div>
+<!-- *end About -->
+
+<!-- ?Menu -->
+<div class="menu w-[80%] flex flex-col mx-auto mt-14" id="ourproduct">
+  <div class="menu__heading">
+
+    <h1 class="font-semibold text-base md:text-lg lg:text-[32px] inline-block relative">
+      Special menu 
+      <span class="foryou" data-title="for you">for you</span>
+    </h1>
+
+  </div>
+
+  <div class="menu__item flex justify-center flex-col md:flex-row flex-wrap gap-5 mt-10">
+    <!-- ?Coffee Card -->
+    <div 
+    class="coffee__card max-w-sm bg-white rounded-lg border border-gray-200 
+    shadow-md dark:bg-gray-800 dark:border-gray-700"
+    >
+
+      <img 
+        class="rounded-t-lg mx-auto" 
+        src="./assets/images/menu/sandwitch.png" 
+        alt="sandwitch" 
+      />
+
+      <div class="p-5">
+
+        <div class="flex justify-between">
+            <h5 class="mb-2 sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">sandwitch</h5>
+            <h5 class="mb-2 sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">12 K</h5>
+        </div>
+
+        <div class="flex justify-between items-center">
+
+          <div class="coffee__choice max-w-[19ch]">
+
+            bread with meat and vegetables
+
+          </div>
+
+          <a href="#" class="w-12 h-12 rounded-full border-2 bg-orange-500 flex justify-center items-center">
+            <img src="./assets/images/coffee-cart.svg" alt="coffee cart">
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- ?end Coffee Card -->
+    <!-- ?Coffee Card -->
+    <div 
+    class="coffee__card max-w-sm bg-white rounded-lg border border-gray-200 
+    shadow-md dark:bg-gray-800 dark:border-gray-700"
+    >
+
+      <img 
+        class="rounded-t-lg mx-auto" 
+        src="./assets/images/menu/hotmilk.png" 
+        alt="hotmilk" 
+      />
+
+      <div class="p-5">
+
+        <div class="flex justify-between">
+            <h5 class="mb-2 sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Hotmilk</h5>
+            <h5 class="mb-2 sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">12 K</h5>
+        </div>
+
+        <div class="flex justify-between items-center">
+
+          <div class="coffee__choice max-w-[19ch]">
+
+            Hot Milk with less sugar
+
+          </div>
+
+          <a href="#" class="w-12 h-12 rounded-full border-2 bg-orange-500 flex justify-center items-center">
+            <img src="./assets/images/coffee-cart.svg" alt="coffee cart">
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- ?end Coffee Card -->
+    <!-- ?Coffee Card -->
+    <div 
+    class="coffee__card max-w-sm bg-white rounded-lg border border-gray-200 
+    shadow-md dark:bg-gray-800 dark:border-gray-700"
+    >
+
+      <img 
+        class="rounded-t-lg mx-auto" 
+        src="./assets/images/menu/coffeeicecream.png" 
+        alt="coffeeicecream" 
+      />
+
+      <div class="p-5">
+
+        <div class="flex justify-between">
+            <h5 class="mb-2 sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Coffee Ice Cream</h5>
+            <h5 class="mb-2 sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">12 K</h5>
+        </div>
+
+        <div class="flex justify-between items-center">
+
+          <div class="coffee__choice max-w-[19ch]">
+
+            Coffe with ice cream vanilla
+
+          </div>
+
+          <a href="#" class="w-12 h-12 rounded-full border-2 bg-orange-500 flex justify-center items-center">
+            <img src="./assets/images/coffee-cart.svg" alt="coffee cart">
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- ?end Coffee Card -->
+    <!-- ?Coffee Card -->
+    <div 
+    class="coffee__card max-w-sm bg-white rounded-lg border border-gray-200 
+    shadow-md dark:bg-gray-800 dark:border-gray-700"
+    >
+
+      <img 
+        class="rounded-t-lg mx-auto" 
+        src="./assets/images/menu/cappucino.png" 
+        alt="cappucino" 
+      />
+
+      <div class="p-5">
+
+        <div class="flex justify-between">
+            <h5 class="mb-2 sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Cappucino</h5>
+            <h5 class="mb-2 sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">12 K</h5>
+        </div>
+
+        <div class="flex justify-between items-center">
+
+          <div class="coffee__choice max-w-[19ch]">
+
+            Hot Cappucino
+
+          </div>
+
+          <a href="#" class="w-12 h-12 rounded-full border-2 bg-orange-500 flex justify-center items-center">
+            <img src="./assets/images/coffee-cart.svg" alt="coffee cart">
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- ?end Coffee Card -->
+    <!-- ?Coffee Card -->
+    <div 
+    class="coffee__card max-w-sm bg-white rounded-lg border border-gray-200 
+    shadow-md dark:bg-gray-800 dark:border-gray-700"
+    >
+
+      <img 
+        class="rounded-t-lg mx-auto" 
+        src="./assets/images/menu/moccacinno.png" 
+        alt="moccacinno" 
+      />
+
+      <div class="p-5">
+
+        <div class="flex justify-between">
+            <h5 class="mb-2 sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Moccacinno</h5>
+            <h5 class="mb-2 sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">12 K</h5>
+        </div>
+
+        <div class="flex justify-between items-center">
+
+          <div class="coffee__choice max-w-[19ch]">
+
+            Hot Moccacino 
+
+          </div>
+
+          <a href="#" class="w-12 h-12 rounded-full border-2 bg-orange-500 flex justify-center items-center">
+            <img src="./assets/images/coffee-cart.svg" alt="coffee cart">
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- ?end Coffee Card -->
+    <!-- ?Coffee Card -->
+    <div 
+    class="coffee__card max-w-sm bg-white rounded-lg border border-gray-200 
+    shadow-md dark:bg-gray-800 dark:border-gray-700"
+    >
+
+      <img 
+        class="rounded-t-lg mx-auto" 
+        src="./assets/images/menu/waffleicecrem.png" 
+        alt="waffleicecrem" 
+      />
+
+      <div class="p-5">
+
+        <div class="flex justify-between">
+            <h5 class="mb-2 sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Waffle Ice cream</h5>
+            <h5 class="mb-2 sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">12 K</h5>
+        </div>
+
+        <div class="flex justify-between items-center">
+
+          <div class="coffee__choice max-w-[19ch]">
+
+            Wafle with Ice cream
+
+          </div>
+
+          <a href="#" class="w-12 h-12 rounded-full border-2 bg-orange-500 flex justify-center items-center">
+            <img src="./assets/images/coffee-cart.svg" alt="coffee cart">
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- ?end Coffee Card -->
+  </div>
+
+</div>
+<!-- ?end Menu -->
+
+<!-- todo:testimonial -->
+<div class="testimonial mt-40 border border-red-200 relative overflow-hidden">
+
+  <div class="relative flex w-[800px] h-[450px] border border-purple-800 bg-[#F6EBDA] rounded-2xl">
+    
+    <div class="testimonial__heading flex flex-col relative translate-x-12 translate-y-1/3">
+
+
+      <div class="testimonial__caption z-20 flex flex-col gap-4">
+
+        <h1 class="md:text-3xl font-semibold">What they say about us</h1>
+        <h6 class="max-w-[30ch] text-sm sm:text-base text-[#7E7D7A] z-30">
+          We always provide the best service 
+          and always maintain the quality of coffee
+        </h6>
+
+      </div>
+
+    </div>
+    
+    <div class="exclude-wrapper bg-[red]">
+      <img src="./assets/images/testimonial/bg-coffee.png" class="w-full h-full absolute top-0 right-0 bottom-0 left-0 opacity-30" />
+    </div>
+
+  </div>
+
+  <div class="indicator flex gap-1 w-max bottom-0 right-0 -translate-x-96 -translate-y-14 absolute z-50 cursor-pointer">
+    <span class="indicator-btn active w-3 h-3 bg-slate-500 xl:bg-[#F6EBDA] rounded-full"></span>
+    <span class="indicator-btn w-3 h-3 bg-slate-500 xl:bg-[#F6EBDA] rounded-full"></span>
+    <span class="indicator-btn w-3 h-3 bg-slate-500 xl:bg-[#F6EBDA] rounded-full"></span>
+  </div>
+  
+  <div class="testimonial__item z-10 border border-orange-300 h-max absolute top-0 right-0 translate-x-[370px] translate-y-20 overflow-hidden">
+    
+    <div class="testimonial__slider flex gap-6 border max-w-[1200px]" id="testimonial_slider">
+        <img 
+          src="./assets/images/testimonial/naura.png"
+          alt="naura"
+          class="border"
+         data-username="Naura"
+         data-user-text="I really love the cappucino, the coffee was very smooth"
+        >
+
+      <img src="./assets/images/testimonial/john.png" alt="john.png">
+      <img src="./assets/images/testimonial/azura.png" alt="azura.png">
+
+      <img src="./assets/images/testimonial/ririn.jpg" alt="ririn.jpg">
+      <img src="./assets/images/testimonial/gina.jpg" alt="gina.jpg">
+      <img src="./assets/images/testimonial/karen.jpg" alt="karen.jpg">
+      
+      
+    </div>
+  </div>
+
+</div>
+<!-- todo:end testimonial -->
+
+
+<!-- ?Newsletter -->
+<div 
+  class="newsletter mt-20 mx-auto w-[80%] h-96 text-white flex flex-col 
+  justify-center items-center gap-5 rounded-3xl bg-cover" 
+  style="background-image: url('./assets/images/newsletter.png');"
+>
+
+  <h3 class="font-semibold text-lg sm:text-4xl text-center">Subscribe to get 50% discount price</h3>
+  <div class="newsletter-input w-[90%] sm:w-[50%] h-10 sm:h-12 rounded-full flex justify-center bg-white px-1 py-1">
+    <input type="text" placeholder="Email Address" class="w-full outline-none rounded-full pl-3 text-xs sm:text-inherit">
+    <button type="submit" class="bg-[#2F2105] w-36 h-full rounded-full font-semibold text-xs sm:text-sm">Order Now</button>
+  </div>
+
+</div>
+<!-- ?end Newsletter -->
+
+<!-- to top -->
+<a
+  href="#" 
+  class="back__to__top inline-block sticky bottom-5 right-1  h-11 p-2 rounded text-white bg-orange-600
+  float-right clear-right z-10"
+>
+  Top ↑
+</a>
+<!-- end to top -->
+
+<script src="script.js"></script>
+</body>
+</html>
